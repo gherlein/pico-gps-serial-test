@@ -1,0 +1,29 @@
+{
+
+  "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "clangd.path": "/home/gherlein/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/18.1.3/clangd_18.1.3/bin/clangd",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true
+
+    // These settings tweaks to the cmake plugin will ensure
+    // that you debug using cortex-debug instead of trying to launch
+    // a Pico binary on the host
+    "cmake.statusbar.advanced": {
+        "debug": {
+            "visibility": "hidden"
+        },
+        "launch": {
+            "visibility": "hidden"
+        },
+        "build": {
+            "visibility": "hidden"
+        },
+        "buildTarget": {
+            "visibility": "hidden"
+        }
+    },
+    "cmake.buildBeforeRun": true,
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+}
